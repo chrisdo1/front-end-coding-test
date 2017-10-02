@@ -1,5 +1,22 @@
 .test-copy {
-	&--component {
-		@extend %default-copy;
-	}
+
+		&--component {
+				@extend %default-copy;
+
+				a {
+						color: $color-guardsman-red;
+
+						&:hover {
+							color: darken($color-guardsman-red, 30%);
+						}
+				}
+
+				sup {
+						font-size: $small-font-size;
+				}
+
+				small {
+						font-size: $medium-font-size;
+				}
+		}
 }

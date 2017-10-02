@@ -2,12 +2,16 @@
 	font-family: $base-font-family;
 	text-transform: uppercase;
 	margin: 0;
+	color: $color-white;
+	text-align: center;
 }
 
 %default-headline {
 	font-family: $base-font-family;
 	font-size: 2em;
 	margin: 0;
+  color: $color-white;
+  text-align: center;
 }
 
 %default-copy {

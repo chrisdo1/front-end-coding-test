@@ -13,7 +13,7 @@
             <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/overpass/3.0.2/overpass-webfont/overpass.min.css" media="all" />
             <!-- http://fontawesome.io/icons/ -->
             <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="all" />
-            {% if css is not empty %}<link type="text/css" rel="stylesheet" href="/css/{{ css }}.css" media="all" />{% endif %}
+            {% if css is not empty %}<link type="text/css" rel="stylesheet" href="../css/{{ css }}.css" media="all" />{% endif %}
     </head>
     <body>
 
@@ -47,7 +47,7 @@
             } );
         </script>
 
-        {% if js is not empty %}<script type="text/javascript" src="/js/{{js}}.min.js"></script>{% endif %}
+        {% if js is not empty %}<script type="text/javascript" src="../js/{{js}}.min.js"></script>{% endif %}
     </body>
 
 </html>

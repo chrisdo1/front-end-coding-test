@@ -13,8 +13,8 @@ The files for this test live in the `example1` folder and contains the following
 
 ### Mark-up
 1. In example1.twig, inside the body block, check for more than one card in the array:
-	- if `true` then create a wrapper div with the attribute: `data-test-layout`
-	- if `false` then do not print `data-test-layout` attribute
+  - if `true` then create a wrapper div with the attribute: `data-test-layout`
+  - if `false` then do not print `data-test-layout` attribute
 2. Clean up the markup in the `_button.twig` template
 3. Fix the semantic markup in the `_band.twig` template
 
@@ -26,7 +26,7 @@ The files for this test live in the `example1` folder and contains the following
   - Mobile: 1 column
 3. Please add some snazzy styles to the call-to-action button at the bottom of each card.
 4. Update the `.test-header-headline` use the `%default-headline style` in the header component.
-	- _Hint_: check the global Sass extends
+  - _Hint_: check the global Sass extends
 5. Create styles for the `<small>` and `<a>` HTML tags inside the copy component.
 6. Tidy up any colors and typography styles using [DRY principles](http://vanseodesign.com/css/dry-principles/)(Don't Repeat Yourself).
 7. Fix the background image path on the band layout.  [This is the image](https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/header/header-press-release-list-2000x1357.jpg) that should be loading.

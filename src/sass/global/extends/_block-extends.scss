@@ -9,7 +9,7 @@ default--band adds basic top & bottom padding, as well as a default white backgr
     //@include clearfix;
     padding-top: $band-padding;
     padding-bottom: $band-padding;
-    background: #fff; // default color
+    background: $color-white; // default color
 }
 
 /*doc
@@ -24,13 +24,16 @@ default--container mimics the container used by bootstrap. It sets a fixed width
 	margin-left: auto;
 	margin-right: auto;
     padding: 0 $mobile-edge;
+
     @include breakpoint( tablet ) {
         width: 750px;
         padding: 0;
     }
+
     @include breakpoint( laptop ) {
         width: 970px;
     }
+
     @include breakpoint( desktop) {
         width: 1170px;
     }
@@ -44,10 +47,12 @@ category: Extends - block
 default--card adds basic padding, as well as a default gray background.
 */
 %default--card {
-    background: #f0f0f0; // default color
+    background: $color-gallery; // default color
+
     .flexbox & {
         // cards are flex to make sure they flexed items inside of them can be 100% height
         display: flex;
         flex-direction: column;
+        height: 100%;
     }
 }

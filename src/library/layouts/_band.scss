@@ -1,24 +1,40 @@
 .test-band {
+
     &--layout {
         @extend %default--band;
-        background-image: url(localhost:9001/header-press-release-list-2000x1357.jpg);
+        background-image: url('https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/header/header-press-release-list-2000x1357.jpg');
+        height: 100vh;
     }
+
     &-container {
         @extend %default--container;
         > * {
             margin-bottom: $band-padding / 3;
         }
     }
+
     &-content {
         display: grid;
-        grid-template-columns: repeat(3, minmax(100px, 1fr));
-        grid-gap: 15px;
-        // Build a tablet/mobile layout
+        grid-template-columns: repeat(1, minmax(100px, 1fr));
+
+        // Grid for Tablet layout.
+        @include breakpoint( tablet ) {
+            grid-template-columns: repeat(2, minmax(100px, 1fr));
+            grid-gap: $card-spacing;
+        }
+
+        // Grid for Laptop and larger.
+        @include breakpoint( laptop ) {
+            grid-template-columns: repeat(3, minmax(100px, 1fr));
+        }
     }
+
     &-footer {
         float: right;
     }
+
     &-copyright {
         float: left;
+        color: $color-white;
     }
 }
